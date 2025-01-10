@@ -1,1 +1,25 @@
-/* ini css */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-icon {
+  border: 1px solid;
+  height: 50px;
+  width: 50px;
+}
+
+.banner-image {
+  border: 1px solid;
+  height: 450px;
+}
+
+.content {
+  height: 500px;
+  border: 1px solid black;
+}
+
+.footer {
+  text-align: center;
+}
