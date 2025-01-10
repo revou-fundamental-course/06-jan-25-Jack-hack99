@@ -2,34 +2,41 @@
 <html lang="en">
   <head>
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css"
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- NAvigasi dan logo -->
+    <!-- Navigasi dan logo -->
     <header class="main-header">
-      <div class="icon-logo">Logo</div>
+      <!-- Logo -->
+      <div class="icon-logo"></div>
 
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Oure Profile</a>
-        <a href="#">Portofolio</a>
-        <a href="#">Massage Us</a>
+      <nav class="navbarNav">
+        <a href="home-page" class="lef-rounded">Home</a>
+        <a href="our-profile">Our Profile</a>
+        <a href="portofolio">Portofolio</a>
+        <a href="message-us" class="right-rounded">Message Us</a>
       </nav>
     </header>
 
+    <hr />
+    <!-- Main content -->
     <main>
       <!-- /Home Page -->
       <section>
-        <header>
+        <!-- Title -->
+        <header id="home-page">
           <h1>
             Hi<span id="user-greeting"> User </span>, Welcome to our website
           </h1>
           <p>Loremsum ipsum</p>
         </header>
+
+        <div class="banner-image"></div>
       </section>
 
       <!-- Oour Profile -->
       <section>
+        <!-- Title -->
         <header id="our-profile">
           <h1>Our Profile</h1>
         </header>
@@ -39,6 +46,7 @@
 
       <!-- Portofolio -->
       <section>
+        <!-- content -->
         <header id="portofolio">
           <h1>Portofolio</h1>
         </header>
@@ -47,12 +55,18 @@
 
       <!-- Massage US -->
       <section>
+        <!-- Title -->
         <header id="massage-us">
           <h1>Massage Us</h1>
         </header>
         <div class="content"></div>
       </section>
     </main>
-    <footer></footer>
+
+    <hr />
+    <!-- footer -->
+    <footer>
+      <p>&copy; 2025 - All reserved</p>
+    </footer>
   </body>
 </html>

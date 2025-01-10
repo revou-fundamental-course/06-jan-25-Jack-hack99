@@ -4,15 +4,37 @@
   align-items: center;
 }
 
-.logo-icon {
-  border: 1px solid;
-  height: 50px;
+.icon-logo {
   width: 50px;
+  height: 50px;
+  background-image: url(https://asset-2.tstatic.net/tribunnews/foto/bank/images/kkp-logo-niih.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  background-position: center;
+}
+
+.nav {
+  display: flex;
+}
+.navbarNav {
+  padding: 8px;
+  color: black;
+  text-decoration: none;
+}
+
+.navbarNav a {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 8px;
+  color: black;
+  border-radius: 5px;
 }
 
 .banner-image {
-  border: 1px solid;
   height: 450px;
+  background-image: url(https://awsimages.detik.net.id/visual/2022/01/19/kementerian-kelautan-dan-perikanan-kkp-cnbc-indonesiaandrean-kristianto-3_169.jpeg?w=650);
+  background-size: cover;
+  background-position: auto;
 }
 
 .content {
