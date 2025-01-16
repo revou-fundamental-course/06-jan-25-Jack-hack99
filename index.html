@@ -1,72 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jek web Portofolio</title>
+
+    <!-- my font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- feathericons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
+
   <body>
-    <!-- Navigasi dan logo -->
+    <!-- Main Header -->
     <header class="main-header">
       <!-- Logo -->
-      <div class="icon-logo"></div>
+      <div class="logo-icon"></div>
 
-      <nav class="navbarNav">
-        <a href="home-page" class="lef-rounded">Home</a>
-        <a href="our-profile">Our Profile</a>
-        <a href="portofolio">Portofolio</a>
-        <a href="message-us" class="right-rounded">Message Us</a>
+      <!-- Navigation -->
+      <nav class="NavbarNav">
+        <a href="#">Home</a>
+        <a href="#our-profile">Our Profile</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#message-us">Message Us</a>
       </nav>
+
+      <!-- plus icon menu -->
+      <div class="navbar-extra">
+        <a
+          href="#"
+          id="menu"
+          aria-label="Buka menu navigasi"
+          title="Buka menu navigasi"
+        >
+          <i data-feather="menu"></i>
+        </a>
+      </div>
     </header>
 
-    <hr />
-    <!-- Main content -->
+    <!-- Main Content -->
     <main>
-      <!-- /Home Page -->
-      <section>
-        <!-- Title -->
-        <header id="home-page">
-          <h1>
-            Hi<span id="user-greeting"> User </span>, Welcome to our website
-          </h1>
-          <p>Loremsum ipsum</p>
-        </header>
-
-        <div class="banner-image"></div>
+      <!-- Home Page -->
+      <section class="hero" id="home-page">
+        <div class="text-content">
+          <h1>Hallo... <span id="user-greeting">User</span></h1>
+          <p class="welcome">
+            I Am Muhamad Zaki Alfath.
+            <br />and Welcome to My Website
+          </p>
+          <p class="jobdesk">Enumerator || Data Analyst || Web Developer</p>
+          <br />
+          <p>
+            Graduating from
+            <span>Marrine and fisheries Polytecnic of Karawang</span>
+          </p>
+        </div>
       </section>
 
-      <!-- Oour Profile -->
-      <section>
-        <!-- Title -->
-        <header id="our-profile">
-          <h1>Our Profile</h1>
-        </header>
-
-        <div class="content"></div>
+      <!-- Our Profile -->
+      <section id="our-profile" class="profile">
+        <h2>Our Profile</h2>
+        <div class="row">
+          <div class="profile-img">
+            <img src="img/logo.jpeg" alt="our-profile" />
+          </div>
+          <div class="content">
+            <h3>Muhamad Zaki Alfath</h3>
+            <p>
+              Saya lulusan Teknik Kelautan, mampu bekerja secara individu maupun
+              berkelompok dengan tim, bekerja dengan cepat, Up to Date terhadap
+              perkembangan Teknologi dan Informasi. saat ini berusia 22 Tahun,
+              walaupun umur saya terbilang muda, tapi saya sudah memiliki
+              beberapa skill yang dapat di andalkan di era 4.0 masa kini seperti
+              Data Analyst, Data Visualizm, UI/UX Design, Fronted Web Design,
+              Program Office, dan berbagai skill editing vidio serta keahlian
+              tentang kelautan. Cek detail saya dibawah
+            </p>
+          </div>
+        </div>
       </section>
 
-      <!-- Portofolio -->
-      <section>
-        <!-- content -->
-        <header id="portofolio">
-          <h1>Portofolio</h1>
-        </header>
-        <div class="content"></div>
+      <!-- Portfolio -->
+      <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+          <img src="img/aspri.jpeg" alt="Portfolio Photo 1" />
+          <img src="img/karang.jpeg" alt="Portfolio Photo 2" />
+          <img src="img/tkl.jpeg" alt="Portfolio Photo 3" />
+          <img src="img/observer.jpeg" alt="Portfolio Photo 4" />
+          <img src="img/selam.jpeg" alt="Portfolio Photo 5" />
+          <img src="img/muncak.jpeg" alt="Portfolio Photo 6" />
+          <!-- <img src="img/php.png" alt="Portfolio Photo 7" />
+          <img src="img/sk.png" alt="Portfolio Photo 8" />
+          <img src="img/sql.svg" alt="Portfolio Photo 9" /> -->
+        </div>
       </section>
 
-      <!-- Massage US -->
-      <section>
-        <!-- Title -->
-        <header id="massage-us">
-          <h1>Massage Us</h1>
-        </header>
-        <div class="content"></div>
+      <section id="message-us" class="contact">
+        <h2>Message Us</h2>
+        <div class="message-container">
+          <!-- Form Input -->
+          <div class="form-container">
+            <form id="messageform">
+              <div class="form-group">
+                <label for="name">Nama:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Nama"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="birthdate">Tanggal Lahir:</label>
+                <input type="date" id="birthdate" name="birthdate" required />
+              </div>
+
+              <div class="form-group">
+                <label>Jenis Kelamin:</label>
+                <div>
+                  <input
+                    type="radio"
+                    id="male"
+                    name="gender"
+                    value="pria"
+                    required
+                  />
+                  <label for="male">Pria</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="wanita"
+                  />
+                  <label for="female">Wanita</label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Pesan:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Pesan"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+
+          <!-- Output -->
+          <div class="output-container">
+            <div class="output">
+              <p>
+                <strong>Current time:</strong> <span id="currenttime"></span>
+              </p>
+              <p><strong>Nama:</strong> <span id="outputname"></span></p>
+              <p>
+                <strong>Tanggal Lahir:</strong>
+                <span id="outputbirthdate"></span>
+              </p>
+              <p>
+                <strong>Jenis Kelamin:</strong> <span id="outputgender"></span>
+              </p>
+              <p><strong>Pesan:</strong> <span id="outputmessage"></span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="social-links">
+        <h2>Kontak</h2>
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+          >
+            <i data-feather="linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+          >
+            <i data-feather="github"></i>
+            <span>GitHub</span>
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+          >
+            <i data-feather="instagram"></i>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Banner Slider -->
+      <section class="banner-slider">
+        <div class="slide">
+          <img src="img/full.jpeg" alt="Banner 1" />
+        </div>
+        <div class="slide">
+          <img src="img/pdl.jpeg" alt="Banner 2" />
+        </div>
+        <div class="slide">
+          <img src="img/pn.jpeg" alt="Banner 3" />
+        </div>
+        <div class="slide">
+          <img src="img/jalan.jpeg" alt="Banner 3" />
+        </div>
+        <div class="slide">
+          <img src="img/drone.jpeg" alt="Banner 3" />
+        </div>
+        <div class="slide">
+          <img src="img/wis.jpeg" alt="Banner 3" />
+        </div>
+        <div class="slide">
+          <img src="img/sem.jpeg" alt="Banner 3" />
+        </div>
       </section>
     </main>
 
-    <hr />
-    <!-- footer -->
+    <!-- Footer -->
     <footer>
-      <p>&copy; 2025 - All reserved</p>
+      <p>&copy; 2025 - Isky Dwi Aprilianto</p>
     </footer>
+
+    <!-- feathericons -->
+    <script>
+      feather.replace();
+    </script>
+    <!-- my js -->
+    <script src="./js/script.js"></script>
   </body>
 </html>
